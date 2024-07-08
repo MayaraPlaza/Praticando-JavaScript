@@ -3,7 +3,11 @@ class Cliente {
     cpf;
     agencia;
     saldo;
-    rg;
+    saldo;
+}
+
+class ContaCorrente{
+
 }
 
 const cliente1 = new Cliente();
