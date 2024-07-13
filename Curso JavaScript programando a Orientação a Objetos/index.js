@@ -1,27 +1,29 @@
-class Cliente {
+class Cliente{
     nome;
     cpf;
-    agencia;
-    saldo;
-    saldo;
-}
+};
 
 class ContaCorrente{
-
-}
+    agencia;
+    saldo;
+};
 
 const cliente1 = new Cliente();
-const cliente2 = new Cliente();
-
 cliente1.nome = "Ricardo";
 cliente1.cpf = 88844455509;
-cliente1.agencia = 1001;
-cliente1.saldo = 0;
-cliente1.rg = 1546859574
 
+const cliente2 = new Cliente();
 cliente2.nome = "Alice";
 cliente2.cpf = 22266655509;
-cliente2.agencia = 1001;
-cliente2.saldo = 0;
 
-console.log(cliente1, cliente2);
+const ContaCorrenteRicardo = new ContaCorrente();
+ContaCorrenteRicardo.saldo = 0;
+ContaCorrenteRicardo.agencia = 1001;
+
+
+console.log(ContaCorrenteRicardo.saldo);
+ContaCorrenteRicardo.saldo = 100;
+console.log(ContaCorrenteRicardo.saldo);
+
+console.log(cliente1);
+console.log(cliente2);
